@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg"
+    tools:context=".PasscodeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="Please Enter Your  New Passcode"
+        android:textColor="#3E3D3D"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlCodeButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/btnfirstPassInput"
+            style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/empty_circle" />
+
+        <ImageButton
+            android:id="@+id/btnSecondPassInput"
+            style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btnfirstPassInput"
+            android:background="@drawable/empty_circle" />
+
+        <ImageButton
+            android:id="@+id/btnThirdPassInput"
+            style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btnSecondPassInput"
+            android:background="@drawable/empty_circle" />
+
+        <ImageButton
+            android:id="@+id/btnFourthPassInput"
+            style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btnThirdPassInput"
+            android:background="@drawable/empty_circle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="btn1Clicked"
+            android:text="1"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn1"
+            android:onClick="btn2Clicked"
+            android:text="2"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn2"
+            android:onClick="btn3Clicked"
+            android:text="3"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btn1"
+            android:onClick="btn4Clicked"
+            android:text="4"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btn1"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn4"
+            android:onClick="btn5Clicked"
+            android:text="5"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btn1"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn5"
+            android:onClick="btn6Clicked"
+            android:text="6"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btn4"
+            android:onClick="btn7Clicked"
+            android:text="7"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btn4"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn7"
+            android:onClick="btn8Clicked"
+            android:text="8"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btn4"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn8"
+            android:onClick="btn9Clicked"
+            android:text="9"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnDel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btn7"
+            android:onClick="btnDelClicked"
+            android:text="✗"
+            android:textColor="#605E5E"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btn7"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btnDel"
+            android:onClick="btn0Clicked"
+            android:text="0"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnDone"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btn7"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn0"
+            android:onClick="btnDoneClicked"
+            android:text="✓"
+            android:textColor="#605E5E"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
