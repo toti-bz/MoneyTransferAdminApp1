@@ -10,18 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.example.moneytransferadmin.testActivity"></activity>
-        <activity android:name="com.example.moneytransferadmin.MainActivity">
+        <activity android:name=".testActivity"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.moneytransferadmin.setPassActivity" />
-        <activity android:name="com.example.moneytransferadmin.PasscodeActivity" />
+        <activity android:name=".setPassActivity" />
+        <activity android:name=".PasscodeActivity" />
         <activity
-            android:name="com.example.moneytransferadmin.SplashScreen"
+            android:name=".SplashScreen"
             android:noHistory="true"></activity>
     </application>
      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />

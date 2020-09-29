@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MoneyTransfer.iml" filepath="$PROJECT_DIR$/.idea/modules/MoneyTransfer.iml" group="MoneyTransfer" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="MoneyTransfer/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MoneyTransferAdmin.iml" filepath="$PROJECT_DIR$/.idea/modules/MoneyTransferAdmin.iml" group="MoneyTransferAdmin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="MoneyTransferAdmin/app" />
     </modules>
   </component>
 </project>

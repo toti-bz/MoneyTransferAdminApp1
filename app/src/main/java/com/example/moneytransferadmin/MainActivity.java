@@ -100,7 +100,7 @@ public class MainActivity extends Activity {
         mainWebView.getSettings().setLoadWithOverviewMode(true);
 
         // cargamos la pagina
-        mainWebView.loadUrl("http://192.168.31.169:81/MT/MoneyTransfer/customer/forms/index.php");
+        mainWebView.loadUrl("http://192.168.31.134:81/MoneyTransfer/admin/login/login.php");
     }
 
     private Boolean isNetworkAvailable(Application application) {
@@ -116,16 +116,6 @@ public class MainActivity extends Activity {
         }
     }
 
-    public void checkPermission(String permission, int requestCode)
-    {
-        if (ContextCompat.checkSelfPermission(MainActivity.this, permission)
-                == PackageManager.PERMISSION_DENIED) {
-            // Requesting the permission
-            ActivityCompat.requestPermissions(MainActivity.this,
-                    new String[] { permission },
-                    requestCode);
-        }
-    }
 
     boolean doubleBackToExitPressedOnce = false;
 
@@ -165,7 +155,7 @@ public class MainActivity extends Activity {
     @Override
     public void onResume(){
         super.onResume();
-        mainWebView.loadUrl("http://192.168.31.169:81/MT/MoneyTransfer/admin/login/login.php");
+        //mainWebView.loadUrl("http://192.168.31.169:81/MT/MoneyTransfer/admin/login/login.php");
         whiteBg.setVisibility(View.GONE);
         errImg.setVisibility(View.GONE);
 
